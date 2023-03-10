@@ -90,36 +90,31 @@ body {
   text-align: center;
   color: grey;
 }
+
 .tab:hover {
   color: #fff;
   cursor: pointer;
 }
 
-/* <i class="fas fa-door-open fa-3x"> */
-/* <i class="fas fa-tablet-alt fa-3x"> */
-/* <i class="fas fa-tags fa-3x"> */
-/* <i class="fas fa-times"> */
-/* <i class="fas fa-check"> */
-/* <i class="fas fa-times"> */
-
 footer {
-  margin: 0 auto;
+  margin: 40px auto;
   width: 80vw;
   color: grey;
 }
 footer ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: grid-start;
-  background-color: pink;
+  align-items: start;
+  justify-content: center;
 }
 
 footer li {
   list-style-type: none;
-  text-align: left;
-  padding-left:0;
+  margin-bottom: 10px;
 }
-
+ul {
+  padding-left: 0;
+}
 /* utlities classes */
 .btn-sm {
   background-color: var(--primary-color);
