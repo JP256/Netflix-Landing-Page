@@ -21,9 +21,7 @@ body {
   background-origin: center;
   box-shadow: inset 100px 100px 100px var(--dark-color),
     inset -100px -100px 100px var(--dark-color);
-
   display: relative;
-  border-bottom: 1px solid grey;
 }
 .showcase::before {
   content: "";
@@ -96,6 +94,28 @@ body {
   cursor: pointer;
 }
 
+.tab-content {
+  border-top: 2px solid grey;
+}
+
+/* TAB 1 */
+.tab-content .tab-1 {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  margin: 30px auto;
+}
+.tab-content .tab-1 img {
+  width: 300px;
+}
+.tab-content .tab-1 p {
+  font-size: 24px;
+}
+
+/* FOOTER */
 footer {
   margin: 40px auto;
   width: 80vw;
