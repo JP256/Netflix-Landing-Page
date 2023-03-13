@@ -133,6 +133,7 @@ a {
 .tab-2 > p {
   grid-column: 1/3;
   font-size: 24px;
+  text-align: left;
 }
 .tab-2 > a {
   grid-column: 3/-1;
@@ -144,6 +145,50 @@ a {
   color: grey;
 }
 
+/* TAB 3 */
+.tab-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tab-3 p {
+  font-size: 1.3rem;
+  margin-bottom: 2.4rem;
+}
+.tab-3 a {
+  margin-bottom: 2.4rem;
+}
+table {
+  width: 100%;
+  font-size: 1.1rem;
+  color: grey;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+}
+thead {
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #242124;
+}
+
+td {
+  padding: 10px;
+}
+th,
+tr,
+td {
+  text-align: center;
+}
+tr td:first-child {
+  text-align: left;
+}
 /* FOOTER */
 footer {
   margin: 40px auto;
@@ -164,6 +209,7 @@ footer li {
 ul {
   padding-left: 0;
 }
+
 /* utlities classes */
 .btn-sm {
   background-color: var(--primary-color);
@@ -198,7 +244,7 @@ ul {
   background-color: var(--primary-color);
   color: #fff;
   width: 350px;
-  height: 10%;
+  min-height: 40px;
   border: none;
   border-radius: 5px;
   text-transform: capitalize;
@@ -214,3 +260,4 @@ ul {
 .btn-lg:active {
   opacity: 1;
 }
+
