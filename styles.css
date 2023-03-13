@@ -294,10 +294,20 @@ ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 600px) {
-  .tabs {
-    grid-template-columns: repeat(1, 1fr);
+  .showcase {
+    height: 85vh;
   }
+  .showcase::before {
+    height: 85vh;
+  }
+  .tabs #tab-1,
+  .tabs #tab-2,
+  .tabs #tab-3 {
+    padding: 10px;
+  }
+
   .showcase-top img {
     width: 150px;
     transition: width 0.5s linear;
@@ -315,7 +325,25 @@ ul {
     font-size: 0.8rem;
     transition: font-size 0.5s linear;
   }
+  .tab-1 {
+    grid-template-columns: 1fr;
+  }
+  .tab-1 a {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .tab-content .tab-1 img {
+    width: 150px;
+  }
+  .tab-content .tab-3 table {
+    font-size: 13px;
+  }
   footer ul {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 559px) {
+  .tabs {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
