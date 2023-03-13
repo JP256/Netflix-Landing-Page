@@ -260,4 +260,14 @@ ul {
 .btn-lg:active {
   opacity: 1;
 }
-
+.tab-border {
+  border-bottom: 2px solid red;
+}
+.tab-1,
+.tab-2,
+.tab-3 {
+  display: none;
+}
+.show {
+  display: grid;
+}
